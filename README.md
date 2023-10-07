@@ -12,6 +12,9 @@
 This project is part of one of the Universidad Nacional de La Plata courses. For more information about this course, please refer to the **[official university course materials.](http://info.unlp.edu.ar/wp-content/uploads/2018/05/Taller-de-Programaci%C3%B3n.pdf)**
 
 👨‍💻 About the Developer:
+<br>
 Juana Zabaleta
+<br>
 **[E-mail](jjuanazabaleta@gmail.com)**
+<br>
 **[LinkedIn](https://www.linkedin.com/in/juanazabaleta/)**
