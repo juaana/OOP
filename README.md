@@ -15,6 +15,4 @@ This project is part of one of the Universidad Nacional de La Plata courses. For
 <br>
 Juana Zabaleta
 <br>
-**[E-mail](jjuanazabaleta@gmail.com)**
-<br>
 **[LinkedIn](https://www.linkedin.com/in/juanazabaleta/)**
