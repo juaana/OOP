@@ -85,12 +85,18 @@ public class Libro {
     }
    
     
-   @Override
-    public String toString(){
-        String aux;
-        aux= titulo + " por " + primerAutor.getNombreAutor() + " - " + añoEdicion + " - " + " ISBN: " + ISBN;
-       return ( aux);
+   
+    @Override
+public String toString() {
+    String aux;
+    if (primerAutor != null) {
+        aux = titulo + " por " + primerAutor.getNombreAutor() + " - " + añoEdicion + " - " + " ISBN: " + ISBN;
+    } else {
+        aux = titulo + " - " + añoEdicion + " - " + " ISBN: " + ISBN;
     }
+    return aux;
+}
+
     
   
 }

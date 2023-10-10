@@ -2,25 +2,43 @@
 3-A- Defina una clase para representar estantes. Un estante almacena a lo sumo 20 libros.
 Implemente un constructor que permita iniciar el estante sin libros. Provea métodos para:
 (i) devolver la cantidad de libros que almacenados (ii) devolver si el estante está lleno
-(iii) agregar un libro al estante (iv) devolver el libro con un título particular que se recibe.
-B- Realice un programa que instancie un estante. Cargue varios libros. A partir del estante,
-busque e informe el autor del libro “Mujercitas”.
-C- Piense: ¿Qué modificaría en la clase definida para ahora permitir estantes que
-almacenen como máximo N libros? ¿Cómo instanciaría el estante?
- */
+(iii) agregar un libro al estante (iv) devolver el libro con un título particular que se recibe.*/
 package tema3;
 
-/**
- *
- * @author jjuan
- */
-public class Ej0303 {
+import PaqueteLectura.Lector;
 
-    /**
-     * @param args the command line arguments
-     */
+    public class Ej0303 {
+
     public static void main(String[] args) {
-        // TODO code application logic here
+        Estante estante = new Estante(); // Instanciar un estante
+
+        // Cargar varios libros en el estante
+        cargarLibrosEnEstante(estante);
+
+        // Buscar e informar el autor del libro "Mujercitas"
+        String tituloBuscado = "Mujercitas";
+        String libroMujercitas = estante.obtenerLibroPorTitulo(tituloBuscado);
+        System.out.println(libroMujercitas);
+        
     }
-    
+
+    public static void cargarLibrosEnEstante(Estante estante) {
+        int dimF = 20;
+        int i = 0;
+        Libro libro;
+
+        // Cargar libros en el estante
+        System.out.println("Ingrese un nuevo libro (Escriba 'L' para terminar)");
+        String unLibro = Lector.leerString();
+        while (!unLibro.equalsIgnoreCase("L") && i < dimF) {
+            libro = new Libro(); // Crear una nueva instancia de libro
+            libro.setTitulo(unLibro); // Establecer el título del libro
+            estante.agregarLibro(libro); // Agregar el libro al estante
+            i++;
+
+            // Leer el siguiente libro
+            System.out.println("Ingrese un nuevo libro (Escriba 'L' para terminar)");
+            unLibro = Lector.leerString();
+        }
+    }
 }
