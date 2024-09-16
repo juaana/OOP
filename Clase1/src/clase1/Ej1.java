@@ -6,7 +6,7 @@
 
 package clase1;
 import PaqueteLectura.GeneradorAleatorio;
-public class Ej01Tabla2 {
+public class Ej1 {
     
 
     /**
