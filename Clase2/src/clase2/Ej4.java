@@ -8,6 +8,8 @@ casting.
 Una vez finalizada la inscripción:
 b) Informar para cada día: la cantidad de inscriptos al casting ese día y el nombre de la
 persona a entrevistar en cada turno asignado.
+
+Si el recorrido de la estructura de datos no es secuencial inicializar todos en null
  */
 package clase2;
 import PaqueteLectura.Lector;
