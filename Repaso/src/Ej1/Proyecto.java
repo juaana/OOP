@@ -60,7 +60,12 @@ public class Proyecto {
     
     public String toString(){
         String aux;
-        aux= "Nombre del proyecto" + this.nombreProyecto + ". Código: "+ this.codigo + ". Nombre del director: " + this.nombreDirector + ". Dinero total otorgado del proyecto: " + this.dineroTotalOtorgado();
+        int i=0;
+        aux= "Nombre del proyecto: " + this.nombreProyecto + ".\nCódigo: "+ this.codigo + ".\nNombre del director: " + this.nombreDirector + ".\nDinero total otorgado del proyecto: $" + this.dineroTotalOtorgado() + "\n-----------\nInvestigadores: ";
+        while(i<maxInv && investigadores[i]!= null){
+            aux += "\n\n" + investigadores[i].toString();
+            i++;
+        }
         return aux;
     }
     

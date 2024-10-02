@@ -27,7 +27,7 @@ public class Subsidio {
     public boolean isOtorgado() {
         return otorgado;
     }
-
+    
     public void setOtorgado(boolean otorgado) {
         this.otorgado = otorgado;
     }

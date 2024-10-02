@@ -60,6 +60,11 @@ public class Investigador {
            i++;
        }
    }
+   public String toString(){
+       
+       String aux = "Nombre: " + this.nombreCompleto + ".\nCategoría: " + this.categoria +".\nEspecialidad: "+ this.especialidad +".\nTotal de dinero otorgado: $" + totalEnSubsidios();
+       return aux;
+   }
     
     
 }
