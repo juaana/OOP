@@ -60,8 +60,8 @@ public class Estacionamiento {
     public String buscarAuto(String unaPatente) {
     String aux = "";
     int i = 0;
-    boolean encontrado = false; // Bandera para marcar si encontramos el auto
-
+    boolean encontrado = false; 
+    
     while (i < cantPiso && !encontrado) {
         int j = 0;
         while (j < cantPlaza && !encontrado) {
