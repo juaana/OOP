@@ -24,11 +24,6 @@ public class Programador {
         this.lenguajePref = lenguajePref;
     }
     
-    public void aumentarSueldo(double aumento){
-        sueldoBasico += aumento;
-    }
-    
-    
     public double calcularSueldo(){
         double aux= this.sueldoBasico;
         if (this.lineasCodigoHR > 200){
@@ -36,14 +31,15 @@ public class Programador {
         }
         return aux;
     }
+    
+    public void aumentarSueldo(double aumento){
+        sueldoBasico += aumento;
+    }
 
     @Override
     public String toString() {
         String aux= nombre + ", " + DNI + ", " + lenguajePref + ", " + this.calcularSueldo()+ "\n";
         return aux;
     }
-    
-    
-    
-    
+      
 }
