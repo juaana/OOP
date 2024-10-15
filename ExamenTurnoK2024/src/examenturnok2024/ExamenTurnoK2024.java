@@ -3,7 +3,7 @@
 Aumente los sueldos básicos de todos los programadores de la empresa en un monto. Muestre la
 representación String de la empresa.
  */
-package examenturnok2024;
+package examenturnoK2024;
 
 /**
  *
